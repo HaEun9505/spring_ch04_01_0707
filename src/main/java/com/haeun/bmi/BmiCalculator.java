@@ -1,27 +1,27 @@
 package com.haeun.bmi;
 
 public class BmiCalculator {
-	private double lowWeight;		//ÀúÃ¼Áß
-	private double normalWeight;	//º¸ÅëÃ¼Áß
-	private double overWeight;		//°úÃ¼Áß
-	private double obesityWeight;	//ºñ¸¸Ã¼Áß
+	private double lowWeight;		//ì €ì²´ì¤‘
+	private double normalWeight;	//ë³´í†µì²´ì¤‘
+	private double overWeight;		//ê³¼ì²´ì¤‘
+	private double obesityWeight;	//ë¹„ë§Œì²´ì¤‘
 	
 	public void bmiCalcu(double weight, double height) {
-		//bmi °è»ê½Ä : ¸ö¹«°Ô / (Å°*0.01)^2 
+		//bmi ê³„ì‚°ì‹ : ëª¸ë¬´ê²Œ / (í‚¤*0.01)^2 
 		
 		double height2 = height*(0.01);
 		double bmiResult = weight / ((height2)*(height2));
 		
-		System.out.println("BMIÁö¼ö : "+(int)bmiResult);
+		System.out.println("BMIì§€ìˆ˜ : "+(int)bmiResult);
 		
 		if(bmiResult > obesityWeight) {
-			System.out.println("ºñ¸¸ÀÔ´Ï´Ù.");
+			System.out.println("ë¹„ë§Œì…ë‹ˆë‹¤.");
 		} else if(bmiResult > overWeight) {
-			System.out.println("°úÃ¼ÁßÀÔ´Ï´Ù.");
+			System.out.println("ê³¼ì²´ì¤‘ì…ë‹ˆë‹¤.");
 		} else if(bmiResult > normalWeight) {
-			System.out.println("Á¤»óÃ¼ÁßÀÔ´Ï´Ù.");
+			System.out.println("ì •ìƒì²´ì¤‘ì…ë‹ˆë‹¤.");
 		} else{
-			System.out.println("ÀúÃ¼ÁßÀÔ´Ï´Ù.");
+			System.out.println("ì €ì²´ì¤‘ì…ë‹ˆë‹¤.");
 		}		
 	}
 

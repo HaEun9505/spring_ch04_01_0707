@@ -1,26 +1,26 @@
 package com.haeun.bmi;
 
 import java.util.ArrayList;
-//BmiCalculatorÅ¬·¡½º¿¡ ÀÇÁ¸
+//BmiCalculatorí´ë˜ìŠ¤ì— ì˜ì¡´
 public class MyInfo {
-	private String name;				//ÀÌ¸§
-	private double weight;				//¸ö¹«°Ô
-	private double height;				//Å°
-	private ArrayList<String> hobbys;	//Ãë¹Ì
-	private BmiCalculator bmiCal;		//°è»ê(BmiCalculatorÅ¬·¡½º) ÀÇÁ¸¼³Á¤
+	private String name;				//ì´ë¦„
+	private double weight;				//ëª¸ë¬´ê²Œ
+	private double height;				//í‚¤
+	private ArrayList<String> hobbys;	//ì·¨ë¯¸
+	private BmiCalculator bmiCal;		//ê³„ì‚°(BmiCalculatorí´ë˜ìŠ¤) ì˜ì¡´ì„¤ì •
 	
-	public void bmiCalculation() {			//¸Ş¼Òµå »ı¼º
-		bmiCal.bmiCalcu(weight, height);	//°´Ã¼.¸Ş¼Òµå
+	public void bmiCalculation() {			//ë©”ì†Œë“œ ìƒì„±
+		bmiCal.bmiCalcu(weight, height);	//ê°ì²´.ë©”ì†Œë“œ
 	}
 	
 	public void getMyInfo() {
-		System.out.println("ÀÌ¸§ : "+name);
-		System.out.println("¸ö¹«°Ô : "+weight);
-		System.out.println("Å° : "+height);
-		System.out.println("Ãë¹Ì : "+hobbys);
+		System.out.println("ì´ë¦„ : "+name);
+		System.out.println("ëª¸ë¬´ê²Œ : "+weight);
+		System.out.println("í‚¤ : "+height);
+		System.out.println("ì·¨ë¯¸ : "+hobbys);
 		
 		
-		bmiCalculation();	//¸Ş¼Òµå È£Ãâ
+		bmiCalculation();	//ë©”ì†Œë“œ í˜¸ì¶œ
 		//bmiCal.bmiCalcu(weight, height);
 	}
 	public void setName(String name) {

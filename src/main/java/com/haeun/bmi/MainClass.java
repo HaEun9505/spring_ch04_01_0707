@@ -10,14 +10,14 @@ public class MainClass {
      
       
       String config = "classpath:applicationCTX.xml";
-      //Container ÆÄÀÏ ºÒ·¯¿À±â
-      AbstractApplicationContext ctx = new GenericXmlApplicationContext(config);   // °´Ã¼ »ı¼º
-      MyInfo myInfo = ctx.getBean("myInfo", MyInfo.class);	//bean Á¶È¸(°´Ã¼ ¾ò¾î¿À±â)
-      //bean id, Å¬·¡½º
+      //Container íŒŒì¼ ë¶ˆëŸ¬ì˜¤ê¸°
+      AbstractApplicationContext ctx = new GenericXmlApplicationContext(config);   // ê°ì²´ ìƒì„±
+      MyInfo myInfo = ctx.getBean("myInfo", MyInfo.class);	//bean ì¡°íšŒ(ê°ì²´ ì–»ì–´ì˜¤ê¸°)
+      //bean id, í´ë˜ìŠ¤
       
-      myInfo.getMyInfo();	 //MyInfo Å¬·¡½ºÀÇ getMyInfo() È£Ãâ(½ÇÇà)
+      myInfo.getMyInfo();	 //MyInfo í´ë˜ìŠ¤ì˜ getMyInfo() í˜¸ì¶œ(ì‹¤í–‰)
       
-      ctx.close(); // »ç¿ë ÈÄ ´İ¾ÆÁà¾ßÇÔ
+      ctx.close(); // ì‚¬ìš© í›„ ë‹«ì•„ì¤˜ì•¼í•¨
    }
 
 }
